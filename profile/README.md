@@ -1,331 +1,218 @@
-# Show Runner
+🎭 Show Runner
 
-**The show must go on.**
+The Show Must Go On. 
 
-Show Runner is an open engineering project for explaining, operating, and automating digital trust systems through the metaphor of backstage theatre.
+Show Runner is an open-source platform for running missions.
 
-Where Code Smell Detective investigates software quality after something smells wrong, Show Runner keeps identity, PKI, certificates, trust, and access running before the audience ever notices a problem.
+Where some systems investigate the past, Show Runner continuously orchestrates the present.
 
-It is not about solving a mystery.
+Its purpose is simple:
 
-It is about keeping the curtain up.
+Keep the mission running.
 
----
+⸻
 
-## What Show Runner Is About
+Our Mission
 
-Show Runner focuses on the operational lifecycle of digital trust:
+Every system has a mission.
 
-- Certificate issuance
-- Certificate renewal
-- Certificate rotation
-- Certificate revocation
-- Trust chain management
-- Root and intermediate CA operations
-- Provisioning
-- mTLS
-- Identity verification
-- Relying party validation
-- Policy compliance
-- Runtime health
+A mission has:
 
-The project began from educational work around `step-ca`, PKI, and certificates, but its scope is broader than any single tool.
+* a desired outcome
+* a current state
+* people and systems working together
+* continuous change
+* continuous improvement
 
-`step-ca` can be one production.
+Show Runner coordinates all of these while the mission is running.
 
-`cert-manager` can be another.
+Instead of asking:
 
-A Kubernetes mTLS environment can be another.
-
-The subject is the whole backstage machinery of digital trust.
-
----
-
-## The Core Metaphor
-
-Show Runner uses a backstage theatre metaphor inspired by live productions.
-
-In a theatre, success means the audience experiences the performance without seeing the chaos backstage.
-
-In PKI, success means certificates renew, identities verify, trust chains validate, and services keep communicating without drama.
-
-The best show is often the one where nothing breaks.
-
----
-
-## Show Runner vs Code Smell Detective
-
-| Code Smell Detective | Show Runner |
-|---|---|
-| Investigates | Operates |
-| Finds what went wrong | Keeps things running |
-| Detective noir | Backstage theatre |
-| Reactive | Proactive |
-| Investigation | Production |
-| Evidence board | Show control console |
-| Verdict | Current state |
-| Recommendation | Next cue |
-
-These projects are siblings, not twins.
-
-They can share foundations from the Open Engineering Platform, but they express different operating models.
-
-Code Smell Detective asks:
-
-> What went wrong, and why?
+What went wrong?
 
 Show Runner asks:
 
-> What needs to happen next so the show goes on?
+What needs to happen next?
 
----
+⸻
 
-## Productions, Not Investigations
+Why “Show Runner”?
 
-The main unit of Show Runner is a **Production**.
+In theatre, a show runner doesn’t perform every role.
 
-A Production is a live operational context that must be prepared, rehearsed, run, monitored, recovered, and eventually retired.
+Instead, they ensure:
 
-A Production may be:
+* the cast is ready
+* the crew knows their cues
+* the lighting works
+* the props are available
+* the audience enjoys the performance
 
-- A certificate authority
-- A Kubernetes cluster using cert-manager
-- A service mesh using mTLS
-- A workload onboarding flow
-- A root CA ceremony
-- A certificate renewal process
-- A production PKI environment
-- A demonstration or educational scenario
+When everything goes well…
 
-A Production does not end with a verdict.
+Nobody notices.
 
-It runs until closing night.
+Modern engineering is remarkably similar.
 
----
+Certificates renew.
 
-## Production Lifecycle
+Trust is maintained.
 
-```text
-Designed
-  ↓
-Prepared
-  ↓
-Rehearsed
-  ↓
-Curtain Up
-  ↓
-Running
-  ↓
-Responding to Cues
-  ↓
-Recovering
-  ↓
-Encore
-  ↓
-Closing Night
-  ↓
-Archived
-```
+Services authenticate.
 
-This matches how certificate and trust systems really behave.
+Identities are verified.
 
-Certificates are not issued once and forgotten.
+Secrets rotate.
 
-They are issued, used, renewed, rotated, trusted, revoked, and retired in continuous loops.
+The audience simply experiences a reliable service.
 
----
+The show goes on.
 
-## Show Control
+⸻
 
-Show Runner is centered around a **Show Control** model.
-
-A show control console answers questions such as:
-
-- Which productions are running?
-- Which certificates are healthy?
-- Which renewals are coming up?
-- Which trust anchors are active?
-- Which provisioners are admitting new actors?
-- Which revocations require attention?
-- Which services depend on this trust chain?
-- Which cues need to fire next?
-
-This is operational awareness, not forensic analysis.
+The First Production: Digital Trust
 
----
+Our first production focuses on the continuous operation of digital trust.
 
-## Characters
+Including:
 
-The Show Runner protagonist is deliberately unnamed.
-
-The Show Runner can be:
-
-- A human operator
-- A platform engineer
-- A Kubernetes controller
-- An automated workflow
-- A service account
-- A CA process
-- A production activity itself
-
-Other characters represent operational responsibilities.
-
-| Character | Responsibility |
-|---|---|
-| Reggie the Renewer | Automated certificate renewal |
-| Roger the Revoker | Revocation, retirement, and credential decommissioning |
-| Sandy the Signer | Certificate authority signing |
-| Ingrid the Issuer | Intermediate CA issuance work |
-| Rory the Root | Root CA authority and ceremonies |
-| Percy the Provisioner | Provisioning and admission |
-| Kevin the Key Keeper | Private key custody |
-| Trevor the Truster | Trust store management |
-| Derek the Decoder | Encoding, ASN.1, DER, PEM, and certificate readability |
-| Bertie the Baseline | Rules, requirements, and compliance |
-| Vera the Verifier | Relying party validation |
-| Wally the Verifier | Relying party validation |
+* Public Key Infrastructure (PKI)
+* Certificates
+* Certificate Authorities
+* Mutual TLS
+* Identity
+* Trust
+* Certificate Renewal
+* Revocation
+* Provisioning
 
-The characters are backstage crew.
+This production is inspired by the educational Globetrotters with step-ca series and explores digital trust through the backstage world of theatre.
 
-Their job is not to solve crimes.
+Future productions may cover entirely different domains while sharing the same operational foundations.
 
-Their job is to make sure the show happens.
+⸻
 
----
+Mission Before Production
 
-## Departments
+A key principle of Show Runner is that every production serves a mission.
 
-Characters naturally group into operational departments.
+Mission
+│
+├── Desired Outcome
+├── Current State
+├── Participants
+├── Systems
+├── Actions
+└── Results
 
-```text
-Production
-├── Certificate Department
-├── Trust Department
-├── Identity Department
-├── Provisioning Department
-├── Security Department
-├── Compliance Department
-├── Renewal Department
-├── Revocation Department
-└── Audience Services
-```
+A production is simply the runtime expression of a mission.
 
-Departments coordinate through cues.
+Stories explain what happened.
 
-A cue is an operational signal that something must happen.
+Productions manage what is happening.
 
-Examples:
+⸻
 
-```text
-Certificate expires in 14 days
-  → Cue Reggie
-  → Renew certificate
-  → Reload service
-  → Show continues
-```
+Our Philosophy
 
-```text
-New workload appears
-  → Cue Percy
-  → Verify identity
-  → Cue Sandy
-  → Issue certificate
-  → Actor enters stage
-```
+Traditional monitoring asks:
 
-```text
-Private key suspected compromised
-  → Cue Roger
-  → Revoke certificate
-  → Cue Reggie
-  → Replace certificate
-  → Cue Trevor
-  → Update trust status
-  → Show continues
-```
+Is something broken?
 
----
+Show Runner asks:
 
-## Managers, Not Detectors
+What does the mission need next?
 
-Show Runner prefers operational managers over diagnostic detectors.
+The difference is subtle but important.
 
-Potential repositories may include:
+The goal is not to react to failure.
 
-- `certificate-manager`
-- `renewal-manager`
-- `trust-manager`
-- `provisioning-manager`
-- `revocation-manager`
-- `policy-manager`
-- `stage-monitor`
-- `stage-console`
-- `show-control`
-- `productions`
-- `characters`
-- `systems`
-- `scripts`
-- `cues`
-- `backstage`
+The goal is to continuously reconcile reality with the desired outcome.
 
-A detector says:
+⸻
 
-> Something may be wrong.
+Characters
 
-A manager says:
+Show Runner tells educational stories through recurring characters inspired by the world of backstage theatre.
 
-> I will keep this part of the show continuously healthy.
+Examples include:
 
-That aligns Show Runner with reconciliation loops used by Kubernetes controllers, cert-manager, Crossplane, and modern platform engineering systems.
+* 🎭 The Show Runner
+* ♻️ Reggie the Renewer
+* ✍️ Sandy the Signer
+* 📜 Ingrid the Issuer
+* 🌳 Rory the Root
+* 🎟️ Percy the Provisioner
+* 🔑 Kevin the Key Keeper
+* 🤝 Trevor the Truster
+* 🚫 Roger the Revoker
+* 📖 Derek the Decoder
+* 🦅 Bertie the Baseline
+* 🎫 Vera & Wally the Verifiers
 
----
+Each character represents a real operational responsibility.
 
-## Relationship to the Open Engineering Platform
+⸻
 
-Show Runner is intended to fit into the broader Open Engineering Platform ecosystem.
+Runtime Thinking
 
-It introduces and exercises a key architectural idea:
+Show Runner treats operations as continuous runtime activities.
 
-> **Production is the runtime counterpart to Story.**
+Rather than one-off investigations.
 
-A Story explains what happened.
+Observe
+↓
+Compare
+↓
+Plan
+↓
+Execute
+↓
+Monitor
+↓
+Repeat
 
-A Production manages what is happening.
+Every production continuously reconciles its current state with its desired state.
 
-This distinction may become useful beyond Show Runner itself:
+⸻
 
-- PixStars performances are productions.
-- PKIStars demonstrations are productions.
-- Code Smell Detective investigations can be run as productions.
-- Platform automation can be modeled as productions.
-- Live engineering operations can be controlled as productions.
+Built on the Open Engineering Platform
 
-Show Runner therefore helps define an Operations Kernel alongside the Investigation Kernel.
+Show Runner is part of the Open Engineering Platform ecosystem.
 
-```text
-Investigation Kernel
-Observe → Investigate → Collect Evidence → Correlate → Explain → Report
+It shares common architectural concepts including:
 
-Operations Kernel
-Observe → Compare → Plan → Execute → Monitor → Reconcile
-```
+* Missions
+* Characters
+* Stories
+* Systems
+* Worlds
 
----
+As the platform evolves, runtime concepts such as Productions will be validated across multiple domains before becoming platform-wide building blocks.
 
-## Guiding Principle
+⸻
 
-Show Runner exists to make digital trust understandable, operable, and resilient.
+Current Status
 
-The show succeeds when:
+🚧 Early architecture and design
 
-- certificates renew before expiry,
-- trust chains validate,
-- keys remain protected,
-- identities are admitted correctly,
-- relying parties keep trusting,
-- revocations are handled cleanly,
-- services keep communicating,
-- and the audience never sees the panic backstage.
+The project is currently defining:
 
-**The show must go on.**
+* Mission architecture
+* Production lifecycle
+* Runtime orchestration
+* Character capsule
+* Systems capsule
+* Educational stories
+* Show Control dashboard
+* Operational managers
 
+⸻
+
+Join the Cast
+
+Whether you’re interested in PKI, certificates, identity, automation, platform engineering, or simply enjoy building elegant systems…
+
+There’s always room backstage.
+
+🎭 The Show Must Go On.
