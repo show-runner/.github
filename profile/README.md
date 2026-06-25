@@ -1,4 +1,4 @@
-🎭 Show Runner
+# 🎭 Show Runner
 
 The Show Must Go On. 
 
@@ -95,7 +95,7 @@ Future productions may cover entirely different domains while sharing the same o
 Mission Before Production
 
 A key principle of Show Runner is that every production serves a mission.
-
+```
 Mission
 │
 ├── Desired Outcome
@@ -104,7 +104,7 @@ Mission
 ├── Systems
 ├── Actions
 └── Results
-
+```
 A production is simply the runtime expression of a mission.
 
 Stories explain what happened.
@@ -159,7 +159,7 @@ Runtime Thinking
 Show Runner treats operations as continuous runtime activities.
 
 Rather than one-off investigations.
-
+```
 Observe
 ↓
 Compare
@@ -171,7 +171,7 @@ Execute
 Monitor
 ↓
 Repeat
-
+```
 Every production continuously reconciles its current state with its desired state.
 
 ⸻
